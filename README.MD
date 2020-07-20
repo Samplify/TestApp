@@ -1,12 +1,13 @@
 # Endpoint success / failure and TTLB query application
 
-## Usage
+## Description
 
 This is an application to query endpoint X times per second and log success / failure and TTLB
 
-## Building docker container
+The success / failure and TTLB logs are located in /opt/testapp/testerapp.log. 
 
-The success / failure and TTLB logs are located in /opt/testapp/testerapp.log. Mount this outside the container for them to persist and for easier access to them.
+Mount this outside the container for them to persist and for easier access to them.
+
 Max log size is 20mb before generating a new log and will keep a max of 10 logs
 
 ### Quickstart build / run docker image
